@@ -19,3 +19,15 @@ code {
 .content {
   min-height: calc(100vh - 70px - 64px);
 }
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
