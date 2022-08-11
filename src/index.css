@@ -35,3 +35,7 @@ code {
 label:not(:last-child) {
   margin-right: 1rem;
 }
+
+.img {
+  width: 100%;
+}
