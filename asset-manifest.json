@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-movie-app/static/css/main.f1535dc6.css",
+    "main.js": "/react-movie-app/static/js/main.e2d3b50e.js",
+    "static/media/404.jpg": "/react-movie-app/static/media/404.123bd1f39659e893608f.jpg",
+    "index.html": "/react-movie-app/index.html",
+    "main.f1535dc6.css.map": "/react-movie-app/static/css/main.f1535dc6.css.map",
+    "main.e2d3b50e.js.map": "/react-movie-app/static/js/main.e2d3b50e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1535dc6.css",
+    "static/js/main.e2d3b50e.js"
+  ]
+}
