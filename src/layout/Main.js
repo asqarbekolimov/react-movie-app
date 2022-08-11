@@ -13,8 +13,12 @@ export default class Main extends React.Component {
       .then((data) => this.setState({ movies: data.Search }));
   }
 
-  searchMovies = (str) => {
-    fetch(`https://www.omdbapi.com/?apikey=47654af5&s=${str}`)
+  searchMovies = (str, type = "all") => {
+    fetch(
+      `https://www.omdbapi.com/?apikey=47654af5&s=${str}${
+        type !== "all" ? `&type=${type}` : ""
+      }`
+    )
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data.Search }));
   };
@@ -23,10 +27,10 @@ export default class Main extends React.Component {
     return (
       <div className="container content">
         <Search searchMovies={this.searchMovies} />
-        {this.state.movies.length ? (
-          <Movies movies={this.state.movies} />
-        ) : (
+        {this.state.loading ? (
           <Loader />
+        ) : (
+          <Movies movies={this.state.movies} />
         )}
       </div>
     );
